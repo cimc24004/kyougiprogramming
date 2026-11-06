@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d403b">
+  <meta name="description" content="RubyとC#で、読んで・動かして・解けるようになる。12のアルゴリズムレッスン、動く図解、コード実行、オリジナル練習問題。">
+  <title>AlgoDojo+ | 「わかった」を「解けた」に。</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230d403b'/%3E%3Cpath d='m25 18-14 14 14 14M39 18l14 14-14 14' fill='none' stroke='%23c4f477' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="learning-tools.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <aside class="sidebar" id="sidebar">
+    <a href="#home" class="brand"><span class="brand-icon">〈〉</span><span>AlgoDojo<b>+</b><small>コードで、考える力を。</small></span></a>
+    <div class="side-label">YOUR WORKSPACE</div>
+    <nav aria-label="メインナビゲーション">
+      <a href="#home" data-nav="home"><span data-icon="home"></span>学習ホーム</a>
+      <a href="#lessons" data-nav="lessons"><span data-icon="book"></span>アルゴリズム図鑑<span class="nav-count">12</span></a>
+      <a href="#visual" data-nav="visual"><span data-icon="layers"></span>動くアルゴリズム</a>
+      <a href="#problems" data-nav="problems"><span data-icon="target"></span>練習問題<span class="nav-count">12</span></a>
+      <a href="#playground" data-nav="playground"><span data-icon="code"></span>コード実行</a>
+    </nav>
+    <div class="side-note"><span class="tiny-dot"></span>小さな一歩を、積み重ねよう。<p>正解の前に、まずは実験。<br>失敗したコードも学びになる。</p></div>
+    <div class="side-progress" id="side-progress"></div>
+    <div class="side-footer"><span class="avatar">YOU</span><div>あなたの学習スペース<small>このブラウザに自動保存</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button mobile-menu" id="menu-toggle" aria-label="メニューを開く" aria-expanded="false"><span data-icon="menu"></span></button>
+      <div class="breadcrumb"><span>学習スペース</span><span class="slash">/</span><strong id="breadcrumb">学習ホーム</strong></div>
+      <div class="top-actions"><button class="search-button" id="search-open"><span data-icon="search"></span><span>学びたいことを検索</span><kbd>/</kbd></button><div class="language-toggle" aria-label="使用する言語"><button data-lang="ruby">Ruby</button><button data-lang="csharp">C#</button></div></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer"><span>AlgoDojo+ <span class="footer-divider">/</span> 一問ずつ、強くなろう。</span><span>Ruby & C# · Learn by doing</span></footer>
+  </div>
+  <dialog id="search-dialog"><div class="search-modal-header"><span data-icon="search"></span><input id="global-search" placeholder="累積和、二分探索、入出力…" aria-label="レッスンと問題を検索"><button id="search-close" class="icon-button" aria-label="検索を閉じる">×</button></div><div id="search-results"></div></dialog>
+  <div id="toast" role="status"></div>
+  <script src="lessons.js"></script><script src="problems.js"></script><script src="visuals.js"></script><script src="vendor/prism-core.min.js" data-manual></script><script src="vendor/prism-clike.min.js"></script><script src="vendor/prism-ruby.min.js"></script><script src="vendor/prism-csharp.min.js"></script><script src="learning-tools.js"></script><script src="app.js"></script>
+</body>
+</html>

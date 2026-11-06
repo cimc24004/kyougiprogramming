@@ -1,0 +1,20 @@
+# Local sessions, generated state, and logs
+runtime/
+local-codex/runtime/
+*.log
+*.pid
+bridge-state.json
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+.codex/
+auth.json
+
+# Local launch shortcuts and dependencies
+*.lnk
+shortcuts/
+node_modules/
+.DS_Store
+Thumbs.db
